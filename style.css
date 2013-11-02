@@ -1,0 +1,859 @@
+/*   
+Theme Name: Burger 21
+Version: 1
+*/
+
+@charset "UTF-8";
+@import "css/reset.css";
+
+
+html, body {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:13px;
+	color:rgb(89,68,60);
+	line-height:20px;
+	height:100%;
+}
+
+h1, h2, h3, h4, h5, h6 { margin:18px 0; line-height:1.0; color:#59443c;}
+h1 { font-size: 2.2em;}
+h2 { font-size: 2.0em; margin:18px 0 14px;}
+h3 { font-size: 1.6em;}
+h4 { font-size: 1.4em;}
+h5 { font-size: 1.2em;}
+h6 { font-size: 1.0em;}
+
+p { margin:0 0 22px 0; }
+
+a { text-decoration:none; outline:none; color:#59443c;}
+a:active { outline:0 none; position:relative; top:1px;}	
+
+hr { border-style:none;}
+hr.stripe { border-style:solid; border-color:#eee; border-width:1px 0 0; padding:0 0 10px;}
+ul, ol { list-style:outside; margin:0 0 0 20px;}
+ul li, ol li { margin:5px 0;}
+ol li { list-style-type: decimal;}
+.clear { clear:both;}
+.hide { display:none; }
+
+.alignleft { float:left; margin:5px 19px 0 0;}
+.alignright {float:right; margin:0 0 0 20px;}
+.aligncenter { margin:-24px 0 24px -30px;}
+.aligncenter img {display:block;}
+
+/* BUTTONS */
+.btn, .gform_button {display:block; margin:10px 0 0; padding:6px 15px; width:80px; background:#eb321e; position:relative; text-align:center; color:#fff; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; border:none; cursor:pointer;}
+.btn:hover, .gform_button:hover { background:#d12512;}
+
+.small-b { vertical-align:middle;}
+
+
+/***** HEADER *****/
+#site-header { display:block; position:relative; width:100%; height:106px; background-image:url(images/header-bg.png); background-color:#eb321e; background-repeat:repeat; border-top:2px solid #bd2113; border-bottom:2px solid #bd2113; box-shadow: 0 0 10px #999;}
+#site-header a {color: #fff;}
+
+.navigation-wrapper { position:relative; width:1000px; margin:0 auto;}
+
+#logo { position:relative; display:block; margin:0; padding:15px 0 0 10px; width:207px; height:79px;}
+#logo img { width:207px;}
+
+/***** TOP NAVIGATION *****/
+#top-navigation { position:absolute; top:10px; right:0; font-size:10px; text-transform:uppercase;}
+#top-navigation .top-nav a { margin-right:8px;}
+#top-navigation .top-nav a:last-child { margin-right:0;}
+#top-navigation .top-nav a.facebook { position:relative; display:inline-block; zoom: 1; *display: inline; top:-2px; margin:-5px 0 0 0; width:23px; height:23px; background:url(images/social-sprite.png) 0 0; text-indent:-9999px;}
+#top-navigation .top-nav a.twitter { position:relative; display:inline-block; zoom: 1; *display: inline; top:-2px; margin:-5px 0 0 0; width:23px; height:23px; background:url(images/social-sprite.png) -23px 0; text-indent:-9999px;}
+
+/***** MAIN NAVIGATION *****/
+#navigation { display:block; position:absolute; top:70px; left:250px; width:525px;}
+.nav-control {display:none;}
+#navigation .main-nav a { font-size:22px; text-transform:uppercase; letter-spacing:-0.05em; margin:0 6px 0 6px; text-shadow: 5px 5px 5px #b12617;}
+
+/***** TOP SEARCH BOX *****/
+#search-box { position:absolute; top:40px; right:0; padding:10px; width:200px; height:55px; background:#59443c; z-index:3;}
+#search-box input[type=text] { width:155px; padding:6px; border:none; font-size:14px; box-shadow:inset 0 0 4px #ccc; -moz-box-shadow:inset 0 0 4px #ccc; -webkit-box-shadow:inset 0 0 4px #ccc; outline:none;}
+#search-box input[type=submit] { margin-left:2px; width:23px; height:21px; background:url(images/btn-search.png) 0 0 no-repeat; border:0; text-indent:-9999px; cursor:pointer;}
+#search-box label { display:block; padding:0 0 3px 0; color:#fff; font-size:16px; text-transform:uppercase; cursor:pointer;}
+
+
+/***** CONTENT *****/
+
+#main-wrapper { width:1000px; min-height:200px; margin:0 auto;}
+.content { padding:20px 20px 40px; clear:both;}
+.content .title { color:#59443c; font-size:4em; text-transform:uppercase;}
+
+
+/***** FOOTER *****/
+
+#site-footer { position:relative; margin:0 auto; padding:0 0 25px; width:1000px; clear:both; border-top:1px solid #EEEEEE;}
+#site-footer .footer-wrapper { padding:20px 20px 20px;}
+#site-footer nav ul {margin:0;}
+#site-footer nav ul li { display:inline-block; zoom: 1; *display: inline; margin:0; width:125px; height:auto; vertical-align:top; font-size:11px; color:#555; text-transform:uppercase;}
+#site-footer nav ul li a { color:#555;}
+#site-footer nav ul li a:hover { color:#fff; background:#eb321e;}
+#site-footer .legal { margin:5px 0 0; text-transform:uppercase; font-size:9px; text-align:right;}
+#site-footer .badge { width:200px; position:absolute; top:25px; right:20px;}
+
+
+/***** HOMEPAGE *****/
+.slider { width:100%; background:#fff;}
+
+
+.home-boxes { margin:10px 0 0;}
+
+.box-wrapper { position:relative; display:block; margin:0 14px 0 0; padding:0; width:319px; height:170px; float:left; overflow:hidden;  background:#fafafa; border-left: 5px solid #dcdcdc;}
+.box-wrapper:last-child { margin:0;}
+
+.box-wrapper .box { padding:15px 100px 15px 15px;  }
+
+.box h2 {color:#e8242b; font-size:24px; margin:5px 0 10px; padding:0; text-transform:uppercase;}
+.box h2 a {color:#e8242b;}
+.box p {color:#59443c; font-size:18px; font-weight:bold;}
+.box p small { display:block; font-size:12px; font-style:italic;}
+.box .button { position:absolute; display:block; background:#59443c; width:auto; color:#fff; text-transform:uppercase; padding:5px 20px; text-align:center; left:0; bottom:15px; font-size:18px;}
+.box .button a { color:#fff;}
+.box .button:active { outline:0 none; top:auto;}	
+
+.box .img { position:absolute; right:0; top:0; width:90px; height:170px; }
+
+.box1 { background-image:url(images/box-1-img.jpg); background-repeat:no-repeat; background-size:90px 170px; background-position:right center;}
+.box2 { background-image:url(images/box-2-img.jpg); background-repeat:no-repeat; background-size:90px 170px; background-position:right center;}
+.box3 { background-image:url(images/box-3-img.jpg); background-repeat:no-repeat; background-size:90px 170px; background-position:right center;}
+
+.home #site-footer { border-top:none;}
+
+/* What Burgers Could Eat Youtube Popup */
+#vid-col { height:386px; width:150px; padding:4px 0 0; float:left; text-align:center; overflow:hidden; background: #ee3a43;}
+#vid-col .vid-thumb img { margin-top:4px; }
+#vid-col .vid-thumb a { display:block; width:130px; height:75px; margin:1px auto; background:#a1272d; box-shadow: inset 0 0 2px #781d22; font-size:10px; line-height:10px; color:#fff; text-transform:uppercase; text-decoration:none; outline:0 none !important; }
+#vid-col .vid-thumb a:hover { background:#222; box-shadow: inset 0 0 5px #000; }
+#vid-col .vid-logo { position:absolute; bottom:10px; right:10px; }
+
+.btn-play { width:100%; opacity:0.6; filter:alpha(opacity=60); /* For IE8 and earlier */}
+.btn-play:hover { opacity:1; filter:alpha(opacity=100); /* For IE8 and earlier */}
+
+
+/***** MENU PAGE *****/
+
+#menu-navigation { width:100%; height:auto; background:#ece7e5; position:relative;}
+.menu-nav { display:block; padding:5px 15px; position:relative;}
+.menu-nav a { width:128px; color:#59443c; font-weight:bold; display:inline-block; zoom: 1; *display: inline;}
+
+.menu-nav a:nth-child(odd) { }
+.menu-nav a:nth-child(even) {}
+
+.menu-items { clear:both;}
+.menu-items hr { border:none; height:1px; background-color:#eee;}
+.menu-items hr:last-of-type { background-color:#fff;}
+
+.section { position:relative; clear:both; margin:30px 0 0;}
+.menu-items .section h2 { margin:0; color:#e8242b; font-size:36px; text-transform:uppercase;}
+.section h3 { margin:0; font-size:24px;}
+.section-desc { font-size:18px;}
+
+.item { position:relative; z-index:2; width:300px; display:inline-block; zoom: 1; *display: inline; vertical-align:top;}
+
+
+.beef-burgers {  width:645px; padding-left:315px;}
+.beef-burgers123 {background-image:url(images/textmex-2.jpg); background-repeat:no-repeat; background-position:left 65px;}
+.beef-burgers .item { width:300px; display:inline-block; zoom: 1; *display: inline;}
+.beef-burgers .item:nth-child(odd) { margin-left:25px;}
+
+.chicken-burgers {  width:645px; padding:0 315px 10px 0;}
+.chicken-burgers123 {background-image:url(images/buffalo-chicken-burger.jpg); background-repeat:no-repeat; background-position:right 10px;}
+.chicken-burgers .item { width:285px; display:inline-block; zoom: 1; *display: inline;}
+.chicken-burgers .item:nth-child(odd) { margin-left:25px;}
+
+
+.seafood-burgers { width:645px; height:300px; padding:15px 0 0 400px;}
+.seafood-burgers123 { background-image:url(images/the-ahi-tuna-burger.jpg); background-repeat:no-repeat; background-position:left 0;}
+.seafood-burgers .item { width:300px; display:block;}
+.seafood-burgers .item:nth-child(even) { margin-left:0;}
+
+.veggie-burgers .item { width:300px;}
+.veggie-burgers .item:nth-child(even) { margin-left:25px;}
+
+.turkey-burgers { width:645px; height:265px; padding-left:400px;}
+.turkey-burgers123 { background-image:url(images/the-skinny-turkey-burger.jpg); background-repeat:no-repeat; background-position:left 0;}
+.turkey-burgers .item { width:300px; display:block; }
+.turkey-burgers .item:nth-child(even) { margin-left:0;}
+
+.fresh-chicken-tenders { height:auto; background-image:url(images/fresh-chicken-tenders.jpg); background-repeat:no-repeat; background-position:right 0; padding-right:300px; }
+.fresh-chicken-tenders .item { width:400px; }
+
+.gourmet-dogs { background-image:url(images/gourmet-dog.jpg); background-repeat:no-repeat; background-position:left 10px; padding:0 0 0 410px; height:315px; }
+.gourmet-dogs .item { width:250px;}
+.gourmet-dogs .item:first-of-type { margin-right:25px;}
+
+.slider-4-packs123 { background-image:url(images/bacon-cheesy-4-pack.jpg); background-repeat:no-repeat; background-position:right 15px;}
+.slider-4-packs .item { width:275px; display:block;}
+.slider-4-packs .item:last-of-type { margin-right:0;}
+
+.fries-etc { background-image:url(images/french-fries.jpg); background-repeat:no-repeat; background-position:left 0; padding:25px 0 0 300px; height:400px;}
+.fries-etc .item { width:300px; min-height:50px; }
+.fries-etc .item:nth-of-type(3n+3) {}
+
+.fresh-salads .item { width:300px; margin-right:25px; }
+.fresh-salads .item:nth-of-type(3n+3) { margin-right:0;}
+
+.hand-dipped-shakes-and-floats { padding-left:300px;}
+.hand-dipped-shakes-and-floats {background-image:url(images/bananas-foster-milkshake.png); background-repeat:no-repeat; background-size:200px 466px; background-position:left 0;}
+.hand-dipped-shakes-and-floats .item { width:230px; }
+
+.sundaes .item { width:300px; margin-right:25px; }
+.sundaes .item:nth-of-type(3n+3) { margin-right:0;}
+
+.cookies .item { width:auto; margin-right:25px; }
+.cookies .item:nth-of-type(3n+3) { margin-right:0;}
+
+.kids-menu .item { width:300px; margin-right:25px; }
+.kids-menu .item:nth-of-type(3n+3) { margin-right:0;}
+
+/***** LOCATIONS PAGE *****/
+
+.locations-by-state {}
+.locations-by-state .col { width:310px; float:left;}
+.locations-by-state h2 { margin:18px 0 0; color:#e8242b; font-size:30px; text-transform:uppercase;}
+.locations-by-state h3 { margin:18px 0 8px;}
+.locations-by-state ul { list-style-type:none; width:300px; margin: 0 0 0 0;}
+.locations-by-state ul li a { text-decoration:underline; color:#e4301d; font-size:13px;}
+.locations-by-state ul li a:hover { color:#fff; background:#eb321e; text-decoration:none;}
+
+/***** INDIVIDUAL LOCATION PAGE *****/
+
+.location-content { padding:20px 0 20px;}
+.location-content .location-content-left { float:left; width:50%; position:relative;}
+.location-content .location-content-right { float:right; width:50%; position:relative;}
+
+.talking-burger { margin:0 0 0; z-index:2; display:block; position:relative; width:100%;}
+.talking-burger img { max-width:480px; max-height:258px; float:right;}
+
+.location-header { position:relative; width:100%; height:305px; background-image:url(images/location/default-header.jpg); background-position:top center; background-repeat:no-repeat; background-color:#3e2f29; }
+
+
+.location-header .location-map { display:inline-block; zoom: 1; *display: inline; position:relative; margin:145px 0 0 15px; z-index:2;}
+.location-header .location-map img { border:3px solid #7b6b65;}
+
+.location-header .location-details { display:inline-block; zoom: 1; *display: inline; vertical-align:top; padding:150px 0 0 10px; color:#fff; font-size:13px; text-shadow:1px 1px 0 #000;}
+.location-header .location-details h1 { margin:0; padding:0; font-size:48px; color:#fff; text-transform:uppercase;}
+.location-header .location-details .location-hours { display:block; overflow:hidden; width:800px;}
+.location-header .location-details .location-hours span:after { content:" •";}
+.location-header .location-details .location-hours span:last-of-type:after { content:"";}
+.location-header .location-details .location-address a { color:#fff;}
+.location-header .location-details .location-address .loc-phone-title {display:none;}
+.location-header .location-details .location-address .loc-phone:before { content:" • ";}
+
+.location-options { background:#3e2f29; display:block; height:40px; position:relative; border-top:1px solid #fff; top:-47px; padding:10px 0 0 180px;}
+.location-options .button {  display:inline-block; zoom: 1; *display: inline; width:145px; height:30px; text-indent:-9999px; margin: 0 5px 0 0;}
+.location-options .button a { display:block; width:145px; height:30px; z-index:3; position:relative;}
+
+.location-options .get-directions { background-image:url(images/location/btn-get-directions.png); background-position:center center; background-size: 98px 13px; background-repeat:no-repeat; background-color:#eb321e;}
+.location-options .get-directions:hover { background-image:url(images/location/btn-get-directions.png); background-position:center center; background-size: 98px 13px; background-repeat:no-repeat; background-color:#d12512;}
+
+.location-options .dl-menu { background-image:url(images/location/btn-dl-menu.png); background-position:center 6px; background-size: 116px 20px; background-repeat:no-repeat; background-color:#eb321e;}
+.location-options .dl-menu:hover { background-image:url(images/location/btn-dl-menu.png); background-position:center 6px; background-size: 116px 20px; background-repeat:no-repeat; background-color:#d12512;}
+
+.location-options .gf-menu { background-image:url(images/location/btn-gf-menu.png); background-position:center 6px; background-size: 116px 20px; background-repeat:no-repeat; background-color:#eb321e;}
+.location-options .gf-menu:hover { background-image:url(images/location/btn-gf-menu.png); background-position:center 6px; background-size: 116px 20px; background-repeat:no-repeat; background-color:#d12512;}
+
+.location-options .order-now { background-image:url(images/location/btn-order-now.png); background-position:center center; background-size: 72px 13px; background-repeat:no-repeat; background-color:#eb321e;}
+.location-options .order-now:hover { background-image:url(images/location/btn-order-now.png); background-position:center center; background-size: 72px 13px; background-repeat:no-repeat; background-color:#d12512;}
+
+.location-options .pp-menu { background-image:url(images/location/btn-pp-menu.png); background-position:center center; background-size: 130px 13px; background-repeat:no-repeat; background-color:#eb321e;}
+.location-options .pp-menu:hover { background-image:url(images/location/btn-pp-menu.png); background-position:center center; background-size: 130px 13px; background-repeat:no-repeat; background-color:#d12512;}
+
+.b21-icon { display:block; width:28px; height:28px; background-image:url(images/location/b21-icon.png); background-position:center center; background-size: 28px 28px; background-repeat:no-repeat;}
+
+/* Location Events */
+.location-events { width:475px; padding:0 0 10px; background:#ece7e5; position:relative;}
+.location-events h2 { background:#3e2f29; display:block; margin:0;  padding:5px 15px; color:#fff; text-transform:uppercase; font-size:36px;}
+.location-events .b21-icon {position:absolute; top:35px; right:-1px; }
+.location-events .event-item { padding:15px 0 10px; margin:0 auto; border-bottom:3px solid #fff; width:90%; min-height:60px; vertical-align:middle;}
+.location-events .event-item:last-child { border-bottom:none;}
+.location-events .event-item h3 { margin:0; padding:0; font-size:18px;}
+.location-events .event-item p { margin:3px 0 0; line-height:16px;}
+.location-events .event-item .event-item-image { height:90px; width:90px; overflow:hidden; background:#999; display:inline-block;}
+.location-events .event-item .event-item-content { display:inline-block; zoom: 1; *display: inline; width:315px; margin:0 0 0 10px; padding:5px 0 0; vertical-align:top;}
+
+/* Location Featured Burger and Shake */
+.featured-items { width:463px; padding:3px; background:#fff; border:3px solid #dacfcb; margin:25px 0 25px; position:relative; float:right;}
+.featured-items-container {  }
+.featured-items h2 { background:#fff; display:block; margin:-25px 0 0 2px;  padding:0 5px 5px 8px; color:#e8242b; text-transform:uppercase; font-size:36px; width:400px;}
+.featured-items .b21-icon {position:absolute; top:-15px; right:-4px; }
+.featured-items .featured-item { padding:15px 0 10px; margin:0 auto; border-bottom:3px solid #fff; width:100%; min-height:60px; vertical-align:middle; background:#ece7e5;}
+.featured-items .featured-item:last-child { border-bottom:none;}
+.featured-items .featured-item h3 { margin:0; padding:0; font-size:18px;}
+.featured-items .featured-item p { margin:3px 0 0; line-height:16px;}
+.featured-items .featured-item .featured-item-image { margin:0 0 0 15px; height:90px; width:90px; overflow:hidden; background:#999; display:inline-block;}
+.featured-items .featured-item .featured-item-content { display:inline-block; zoom: 1; *display: inline; width:320px; margin:0 0 0 10px; padding:5px 0 0; vertical-align:top;}
+
+/* Charity of the Month */
+.charities-container { width:625px; position:relative; clear:both; float:left; background-image:url(images/location/bg-dbl-strip.png); background-size: 100% 10px; background-repeat:no-repeat; background-position: right 15px;}
+.charities-container h2 { margin:0; padding:0; text-transform:uppercase; font-size:36px; width:350px; background:#fff; }
+.charities-container .b21-icon {position:absolute; top:5px; right:-4px; }
+.charities-container p { margin:0;}
+.charities { background:#f5f3f2; padding:15px 15px;}
+.featured-charity { background:#fff; text-align:center; margin:5px 0 0; padding:10px;}
+.featured-charity h3 { margin:0; padding:0; font-size:24px; color:#e8242b; }
+p.charity-list-title { margin:10px 0 0; font-weight:bold;}
+.charity-list { margin:5px 0 0;}
+.charity-list .charity { display:inline-block; zoom: 1; *display: inline; width:195px; font-size:11px; line-height:normal; padding:0 0 5px; vertical-align:top;  }
+
+
+/* Meet Us */
+.meet-us { width:350px; background:#3e2f29; position:relative; color:#fff; padding:10px 0 15px; float:right; background-image:url(images/location/bg-sl-stripe.png); background-size: 90% 3px; background-repeat:no-repeat; background-position: right 28px; }
+.meet-us h2 { margin:0; padding:0 0 0 15px; color:#fff; font-size:36px; text-transform:uppercase; background:#3e2f29; width:135px; }
+.meet-us h3 { margin:0; padding:0; color:#f32c19; font-size:20px;}
+.meet-us h4 { margin:0; padding:0; font-size:18px;}
+.meet-us .b21-icon {position:absolute; top:15px; right:-1px; }
+.meet-us .meet-us-image { margin:5px 0 0 15px; width:90px; height:90px; display:inline-block; zoom: 1; *display: inline; background:#999; vertical-align:top;}
+.meet-us .meet-us-content { display:inline-block; zoom: 1; *display: inline; margin:0 0 0 8px; width:225px; vertical-align:top; }
+.meet-us .meet-us-content p { margin:3px 0 0 0; line-height:16px;}
+
+
+/***** PRESS ROOM *****/
+
+#press-navigation { width:200px; height:auto; background:#ece7e5; position:relative;}
+.press-nav { display:block; padding:5px 15px; position:relative;}
+.press-nav a { padding:0 25px 0 0; color:#59443c; font-weight:bold; display:block;}
+
+.press-room ul { list-style:outside; margin: 0 0 0 20px;}
+.press-room ul li { font-size:13px; margin:5px 0;}
+.press-room a { text-decoration:underline; color:#e4301d;}
+.press-room a:hover { text-decoration:none; color:#fff; background:#eb321e;}
+
+.media-inquires { padding:25px 0; text-align:center; font-size:16px; border-top:1px solid #eee; border-bottom:1px solid #eee;}
+.media-inquires p { margin:0;}
+
+.in-the-news { display:block; float:left; width:450px; margin:15px 0 0; padding:0 0 50px 0;}
+
+.press-releases { display:block; float:left; width:450px; margin:15px 0 0 35px; padding:0 0 50px 0;}
+
+.resources { display:block; clear:both;}
+
+/* Article Styles */
+
+.article, .articles { width:75%; margin:0 auto;}
+.article .article-date { margin:15px 0 5px; font-size:14px;}
+.article h1 { margin:10px 0 15px; }
+
+.article-short { padding:35px 0 25px; border-top:1px solid #eee;}
+.article-short hr { border:1px solid #eee; height:1px; border-width:1px 0 0; margin:15px 0; }
+.article-short:last-of-type hr { border:none;}
+.article-date { margin:0 0 5px; font-size:14px;}
+.article-title { margin:0 0 10px;}
+.article-short .more { color:#e4301d; font-size:13px; font-weight:bold;}
+.article-short .more:hover { color:#fff; background:#eb321e;}
+.article-short .more:after { content:"→"; margin-left:0.5em;}
+
+/* PRESS-ROOM/IMAGE DOWNLOADS PAGE */
+
+.press-images .image-block { margin:0 5px 0 0; width:150px; height:165px; display:inline-block; zoom: 1; *display: inline; vertical-align:top;}
+.press-images .image-block span { display:block;}
+
+
+/***** CONTACT PAGE *****/
+
+.contact .contact-office {}
+.contact .contact-office p { margin:0;}
+
+
+.gform_wrapper .gfield { margin:10px 0 0;}
+.gform_wrapper .gsection { margin:50px 0 0;}
+
+
+/***** CAREERS PAGE *****/
+.page-id-23 .content { padding:220px 20px 40px; background-image:url(images/careers-header.jpg); background-repeat:no-repeat; background-position:top center;}
+.page-id-23 .content h1 { color:#fff;}
+.careers-left { display:block; width:450px; float:left;}
+.careers-right { display:block; width:450px; float:right;}
+
+
+/***** TALKING BURGERS *****/
+
+.burger-thought {
+	z-index:2;
+	position:absolute;
+	width:160px;
+	padding: 0 0 0 10px;
+	text-align:center;
+	top:15px;
+	font-family: 'Lora', serif;
+	font-size:16px;
+	color:#e8242b;
+}
+
+
+.talking-beef-burger { position:absolute; left:0; top:0; width:300px;}
+.talking-beef-burger .beef-burger-thought { position:absolute; left:95px; top:10px; width:180px; height:70px; z-index:2; text-align:center; padding: 0 0 0 10px; font-family: 'Lora', serif; font-size:16px; color:#e8242b; line-height:18px;}
+.talking-beef-burger .beef-burger-thought p { position:absolute; bottom:0; width:100%;}
+.talking-beef-burger .beef-burger { position:absolute; top:65px;}
+
+.talking-chicken-burger { position:absolute; right:0; top:0; width:350px;}
+.talking-chicken-burger .chicken-burger-thought {
+	position:relative; 
+	left:0; top:0;
+	width:180px; height:25px;
+	z-index:2;
+	text-align:left;
+	padding: 0 0 0 10px;
+	font-family: 'Lora', serif;
+	font-size:16px;
+	color:#e8242b;
+	line-height:18px;
+}
+.talking-chicken-burger .chicken-burger-thought p { position:absolute; bottom:0; width:100%; margin:0;}
+.talking-chicken-burger .chicken-burger { position:absolute; top:25px;}
+
+
+.talking-seafood-burger { position:absolute; left:0; top:0; width:300px;}
+.talking-seafood-burger .seafood-burger-thought {
+	position:absolute; 
+	left:190px; top:0;
+	width:180px; height:45px;
+	z-index:2;
+	text-align:center;
+	padding: 0 0 0 10px;
+	font-family: 'Lora', serif;
+	font-size:16px;
+	color:#e8242b;
+	line-height:18px;
+}
+.talking-seafood-burger .seafood-burger-thought p { position:absolute; bottom:0; width:100%; margin:0;}
+.talking-seafood-burger .seafood-burger { position:absolute; top:15px;}
+
+
+.talking-turkey-burger { position:absolute; left:0; top:0; width:300px;}
+.talking-turkey-burger .turkey-burger-thought {
+	position:absolute; 
+	left:190px; top:0;
+	width:180px; height:35px;
+	z-index:2;
+	text-align:center;
+	padding: 0 0 0 10px;
+	font-family: 'Lora', serif;
+	font-size:16px;
+	color:#e8242b;
+	line-height:18px;
+}
+.talking-turkey-burger .turkey-burger-thought p { position:absolute; bottom:0; width:100%; margin:0;}
+.talking-turkey-burger .turkey-burger { position:absolute; top:15px;}
+
+
+.talking-slider-4-packs { position:absolute; right:-10px; top:0; width:740px;}
+.talking-slider-4-packs .slider-4-packs-thought {
+	position:relative; 
+	left:330px; top:25px;
+	width:300px;
+	z-index:2;
+	text-align:left;
+	padding: 0 0 0 10px;
+	font-family: 'Lora', serif;
+	font-size:16px;
+	color:#e8242b;
+	line-height:18px;
+}
+.talking-slider-4-packs .slider-4-packs-thought p { position:absolute; bottom:0; width:100%; margin:0;}
+.talking-slider-4-packs .slider-4-pack { position:absolute; top:45px; right:0;}
+
+/***** INSTAGRAM CONTEST *****/
+.page-id-764 .content { background:#000 url(images/instagram/instagram-bg.jpg) repeat-y left top; color:#fff; text-align:center;}
+.page-id-764 .content a { color:#fff;}
+.page-id-764 .content h1 { display:none;}
+.page-id-764 .content h2 { color:#fff; font-weight:normal; text-align:center; width:90%; margin:18px auto 14px;}
+.page-id-764 .content h3 { color: #ed2f09; text-transform:uppercase; margin:30px 0 5px;}
+.page-id-764 .content hr { border-top: 3px dotted #ed2f09; width:65%; margin:0 auto;}
+.page-id-764 .content ol { margin:0 0 25px 20px; }
+.page-id-764 .content ul li { list-style-type:none; margin:0 0 0 -20px;}
+.page-id-764 .content .binstagramed { text-align:center; padding:25px 0 0;}
+.page-id-764 .content .contest-details { width:65%; margin:0 auto; text-align:left;}
+.page-id-764 .content .instagram-week-1 { padding: 0 0 25px 255px; background:url(images/instagram/week1.png) no-repeat 0 35px; border-top: 3px dotted #ed2f09;}
+.page-id-764 .content .instagram-week-2 { padding: 0 0 25px 255px; background:url(images/instagram/week2.png) no-repeat 0 65px; border-top: 3px dotted #ed2f09;}
+.page-id-764 .content .instagram-week-3 { padding: 0 0 25px 255px; background:url(images/instagram/week3.png) no-repeat 0 55px; border-top: 3px dotted #ed2f09;}
+.page-id-764 .content .instagram-week-4 { padding: 0 0 25px 255px; background:url(images/instagram/week4.png) no-repeat 0 55px; border-top: 3px dotted #ed2f09;}
+
+
+@media screen and (max-width: 1000px) {
+	
+	/***** HEADER *****/
+	#site-header { height:auto;}
+	
+	.navigation-wrapper { width:100%;}
+	
+	/***** TOP NAVIGATION *****/
+	#top-navigation { position:absolute; right:15px; }
+	
+	/***** MAIN NAVIGATION *****/
+	#navigation { display:block; position:relative; top:0; left:0; background:#bd2113; width:auto; margin:5px 0 0; padding:5px 10px;}
+	
+	/***** TOP SEARCH BOX *****/
+	#search-box { position:absolute; top:50px; right:10px; }
+	
+	/***** CONTENT *****/
+	#main-wrapper { width:100%; min-width:225px; margin:0 auto;}
+	
+	.content { padding:20px 20px 10px;}
+	
+	
+	/***** FOOTER *****/
+	#site-footer { width:100%;}
+	#site-footer nav ul li { float:left; }
+	#site-footer nav ul li ul {display:block; min-height:50px; margin:10px 0 0;}
+	#site-footer .legal { clear:both;}
+	
+	
+	.home-boxes { width:100%;}
+	.box-wrapper {width:33%; height:170px; margin:0; border-left:none;}
+	.box-wrapper:first-child { margin:0;}
+	.box-wrapper:last-child { width:34%;}
+	.box-wrapper .box { border-left: 5px solid #dcdcdc; height:100%;}
+	
+	
+	/***** MENU PAGE *****/
+	
+	.section {}
+	
+	.beef-burgers {  width:100%; padding-left:0; background-image:none;}
+	.beef-burgers .item { width:48%;}
+	
+	.chicken-burgers {  width:100%; padding-right:0; background-image:none;}
+	.chicken-burgers .item { width:48%;}
+	
+	.seafood-burgers { width:100%; padding:0; background-image:none; height:auto;}
+	.seafood-burgers .item { width:48%; display:inline-block; zoom: 1; *display: inline;}
+	.seafood-burgers .item:nth-child(odd) { margin-left:25px;}
+	
+	.veggie-burgers { width:100%;}
+	.veggie-burgers .item { width:48%;}
+	
+	.turkey-burgers { width:100%; padding:0; background-image:none; height:auto;}
+	.turkey-burgers .item { width:48%; display:inline-block; zoom: 1; *display: inline;}
+	.turkey-burgers .item:nth-child(odd) { margin-left:25px;}
+	
+	.fresh-chicken-tenders { width:100%; padding:0; background-image:none; height:auto;}
+	.fresh-chicken-tenders .item { width:48%; display:inline-block; zoom: 1; *display: inline;}
+	.fresh-chicken-tenders .item:nth-child(even) { margin-left:25px;}
+	
+	.gourmet-dogs { width:100%; padding:0; background-image:none; height:auto;}
+	.gourmet-dogs .item { width:48%; display:inline-block; zoom: 1; *display: inline;}
+	.gourmet-dogs .item:first-of-type { margin-right:0;}
+	.gourmet-dogs .item:nth-of-type(even) { margin-right:25px;}
+	
+	.slider-4-packs { width:100%; padding:0; background-image:none; height:auto;}
+	.slider-4-packs .item { width:48%; display:inline-block; zoom: 1; *display: inline;}
+	.slider-4-packs .item:nth-of-type(even) { margin-right:25px;}
+	
+	.fries-etc { width:100%; padding:0; background-image:none; height:auto;}
+	.fries-etc .item { width:48%; }
+	.fries-etc .item:nth-of-type(2n+2) { margin-right:0;}
+	
+	.fresh-salads { width:100%; padding:0; background-image:none; height:auto;}
+	.fresh-salads .item { width:48%; display:inline-block; zoom: 1; *display: inline; margin-right:0;}
+	.fresh-salads .item:nth-child(even) { margin-left:25px;}
+	.fresh-salads .item:nth-child(2n) { margin-left:0;}
+	
+	.hand-dipped-shakes-and-floats { padding-left:0; background-image:none;}
+	
+	/****/
+	.talking-burger { overflow:hidden;}
+	
+	.location-events { width:95%;}
+	.location-events .event-item .event-item-content { width:60%;}
+	
+	.location-header .location-details .location-hours { width:100%;}
+	.location-header .location-details .location-hours span { width:80%; margin:0 auto; }
+	
+	.featured-items { width:95%;}
+	.featured-items h2 { width:85%;}
+	.featured-items .featured-item .featured-item-content { width:60%;}
+	
+	.charities-container { width:60%;}
+	
+	.meet-us { width:37%;}
+	.meet-us .meet-us-content { width:50%;}
+	
+	
+	.talking-beef-burger { display:none;}
+	.talking-chicken-burger { display:none;}
+	.talking-seafood-burger { display:none;}
+	.talking-turkey-burger { display:none;}
+	.talking-slider-4-packs  { display:none;}
+
+	
+	}
+@media screen and (max-width: 758px) {
+	
+	html {-webkit-text-size-adjust: none;}
+	s
+	#site-header { height:auto; box-shadow:none; border-bottom:none;}
+	
+	#logo { position:relative; height:50px; margin:0 0 5px; padding:5px 0 5px 5px; overflow:hidden;}
+	#logo img { position:relative; width:180px;}
+	
+	
+	/***** TOP NAVIGATION *****/
+	#top-navigation a { display:none;}
+	#top-navigation .facebook, #top-navigation .twitter { display:inline-block; zoom: 1; *display: inline;}
+	
+	/***** TOP SEARCH BOX *****/
+	#search-box {display:none;}
+	
+	
+	/***** FOOTER *****/
+	#site-footer .badge {display:block; width:150px;}
+	#site-footer .legal { text-align:left;}
+	
+	
+	.slider { width:100%; height:auto;}
+	
+	
+	.box-wrapper {width:100%; min-height:100px; height:auto;  border-left:none; border-bottom:5px solid #dcdcdc;}
+	.box-wrapper:last-child { width:100%;}
+	.box-wrapper .box { border-left:none; padding:15px 100px 5px 15px; }
+	.box h2 { margin:0; padding:0;}
+	
+	.box .button { display:none;}
+	
+	
+	.beef-burgers .item { width:45%;}
+	.beef-burgers .item:nth-child(even) { margin-left:0;}
+	.beef-burgers .item:nth-child(odd) { margin-right:5%;}
+	
+	.chicken-burgers .item { width:45%;}
+	.chicken-burgers .item:nth-child(even) { margin-left:0;}
+	.chicken-burgers .item:nth-child(odd) { margin-right:5%;}
+	
+	.seafood-burgers .item { width:45%;}
+	.seafood-burgers .item:nth-child(even) { margin-left:0;}
+	.seafood-burgers .item:nth-child(odd) { margin-right:5%;}
+	
+	.veggie-burgers .item { width:45%;}
+	.veggie-burgers .item:nth-child(even) { margin-left:0;}
+	.veggie-burgers .item:nth-child(odd) { margin-right:5%;}
+	
+	.turkey-burgers .item { width:45%;}
+	.turkey-burgers .item:nth-child(even) { margin-left:0;}
+	.turkey-burgers .item:nth-child(odd) { margin-right:5%;}
+	
+	.fresh-chicken-tenders .item { width:45%;}
+	.fresh-chicken-tenders .item:nth-child(even) { margin-left:0;}
+	.fresh-chicken-tenders .item:nth-child(odd) { margin-right:5%;}
+	
+	.gourmet-dogs .item { width:45%;}
+	.gourmet-dogs .item:nth-child(even) { margin-left:0;}
+	.gourmet-dogs .item:nth-child(odd) { margin-right:5%;}
+	
+	.slider-4-packs .item { width:45%;}
+	.slider-4-packs .item:nth-child(even) { margin-left:0;}
+	.slider-4-packs .item:nth-child(odd) { margin-right:5%;}
+	
+	.fries-etc .item { width:45%;}
+	.fries-etc .item:nth-child(even) { margin-left:0;}
+	.fries-etc .item:nth-child(odd) { margin-right:5%;}
+	
+	
+	/*****/
+	.location-header { height:auto; background-size: auto 200px; background-position: center 0px;}
+	.location-header .location-details { padding:0;}
+	.location-header .location-details h1 { margin:90px 0 0 0; padding:0 0 10px 10px; font-size:36px; border-bottom:1px solid #fff;}
+	
+
+	.location-header .location-details .location-address { margin:0; padding:10px 0 10px; width:60%; min-height:50px; float:left; background:#3E2F29;}
+	.location-header .location-details .location-address span { margin: 0 0 0 5%;}
+	.location-header .location-details .location-address .loc-address { display:block;}
+	.location-header .location-details .location-address .loc-city { display:block;}
+	.location-header .location-details .location-address .loc-phone-title { display:block; font-weight:bold; margin:8px 0 0 5%;}
+	.location-header .location-details .location-address .loc-phone { display:block;}
+	.location-header .location-details .location-address .loc-phone:before { content:"";}
+	
+	.location-hours { margin:0; padding:10px 0 10px; width:70%; min-height:50px; float:left; background:#3E2F29;}
+	.location-hours span { padding: 0 5% 0 0;}
+	
+	.location-header .location-details .location-hours {margin:0; padding:10px 0 10px; width:40%; min-height:50px; float:left; background:#3E2F29;}
+	.location-header .location-details .location-hours span { display:block; margin:0;}
+	.location-header .location-details .location-hours span.day { font-weight:bold;}
+	.location-header .location-details .location-hours span.hour { margin:0 0 5px; line-height:normal;}
+	.location-header .location-details .location-hours span:after {content:"";}
+	
+	
+	.location-header .location-map { display:none;}
+	
+	.location-header .location-details { width:100%; }
+	
+	.location-options { top:0; display:block; clear:both; padding:0 0 10px; height:auto; background:none; border-top:none;}
+	.location-options .button { width:95%; height:35px; display:block; margin:5px auto 0;}
+	.location-options .button a { width:100%;}
+	
+	.location-content .location-content-left { width:100%; float:none;}
+	.location-content .location-content-right { width:100%; float:none;}
+	
+	.talking-burger { display:none;}
+	
+	/* Location Events */
+	
+	.location-events { width:95%; margin:0 auto;}
+	.location-events h2 { font-size:22px;}
+	.location-events .event-item .event-item-content { width:75%;}
+	.location-events .b21-icon { top:20px;}
+	
+	
+	.featured-items { width:91%; margin:30px auto 0; float:none;}
+	.featured-items h2 { font-size:22px; width:250px; margin:-18px 0 0 2px; padding:0 5px 5px 5px;}
+	.featured-items .featured-item .featured-item-content { width:75%;}
+	
+	
+	.charities-container {  width:95%; margin:20px auto 0; float:none; background-position: right 6px;}
+	.charities-container h2 { font-size:22px; width:225px; background:#fff;}
+	.charities-container .b21-icon { top:-3px;}
+	
+	.charities { margin:5px 0 0; line-height:16px;}
+	.charity-list { line-height:14px;}
+	.charity-list .charity { width:100%; vertical-align:top; margin:0;}
+	
+	.meet-us { float:none; width:95%; margin:20px auto 0; background-position: right 18px;}
+	.meet-us h2 { font-size:22px;}
+	.meet-us h3 { font-size:18px;}
+	.meet-us h4 { font-size:16px;}
+	.meet-us .b21-icon { top:6px;}
+	
+	.meet-us .meet-us-content { width:75%;}
+	
+	
+	}
+@media screen and (max-width: 524px) {
+	
+	/***** HEADER *****/
+	#site-header { height:auto; box-shadow:none; border-bottom:none;}
+	
+	.navigation-wrapper { width:100%; min-width:225px;}
+	
+	#logo { position:relative; height:35px; margin:0 0 5px; padding:5px 0 5px 5px; overflow:hidden;}
+	#logo img { position:relative; width:125px;}
+	
+	/***** TOP NAVIGATION *****/
+	#top-navigation { display:none;}
+	
+	/***** MAIN NAVIGATION *****/
+	#navigation { width:auto; position:relative; top:0; left:0; background:#bd2113; display:block; padding:0 15px; }
+	#navigation {}
+	.nav-control { position:absolute; display:block; top:5px; right:10px; text-indent:-9999px;  width:35px; height:45px; background-image:url(images/menu-icon.png); background-repeat:no-repeat; background-size:15px 15px; background-position:center center;}
+	.playing {background:#bd2113; background-repeat:no-repeat; background-size:15px 15px; background-position:center center;}
+	#navigation .main-nav a { display:block; font-size:1.6em; text-transform:uppercase; letter-spacing:-0.03em; margin:0 0 -3px 0; padding:0 0 8px 0; text-shadow: 5px 5px 5px #b12617; border-bottom:2px solid #e8242b;}
+	#navigation .main-nav a:last-of-type { border-bottom:none; padding:0;}
+	#navigation {display:none; }
+	
+	/***** TOP SEARCH BOX *****/
+	#search-box { display:block; position:relative; top:0; right:0; width:100%; height:30px; padding:0; background-image:url(images/pin.png); background-size: 18px 20px; background-repeat:no-repeat; background-position: 10px 5px;}
+	#search-box label {padding:4px 0 0 33px; }
+	#search-box input { display:none;}
+	
+	
+	.content { padding:10px 20px 20px; clear:both;}
+	.content .title { margin:10px 0;}
+	
+	/***** FOOTER *****/
+	#site-footer .badge { display:block; margin:10px 0 0; width:125px; position:relative; top:0; right:0; float:left;}
+	
+	
+	/***** HOMEPAGE *****/
+	.slider { width:100%; height:auto; background:none;}
+	
+	.home-boxes {margin:0; min-width:225px;}
+	.box p small { display:inline-block;}
+	
+	/***** MENU PAGE *****/
+	.menu-nav a { width:48%; font-size:12px;}
+	.section {margin:20px 0 0;}
+	.beef-burgers .item, .chicken-burgers .item { width:100%; display:block; zoom: 1; *display: block;}
+	.beef-burgers .item:nth-child(odd) { margin-left:0;}
+	.beef-burgers .item:nth-child(even) { margin-right:0;}
+	
+	.chicken-burgers .item { width:100%; display:block; zoom: 1; *display: block;}
+	.chicken-burgers .item:nth-child(odd) { margin-left:0;}
+	.chicken-burgers .item:nth-child(even) { margin-right:0;}
+	
+	.seafood-burgers .item { width:100%; display:block; zoom: 1; *display: block;}
+	.seafood-burgers .item:nth-child(even) { margin-left:0;}
+	.seafood-burgers .item:nth-child(odd) { margin-right:0;}
+	.seafood-burgers .item:nth-child(2n+1) {margin-left:0;}
+	
+	.veggie-burgers .item { width:100%; display:block; zoom: 1; *display: block;}
+	.veggie-burgers .item:nth-child(even) { margin-left:0;}
+	.veggie-burgers .item:nth-child(odd) { margin-right:0;}
+	
+	.turkey-burgers .item { width:100%; display:block; zoom: 1; *display: block;}
+	.turkey-burgers .item:nth-child(even) { margin-left:0;}
+	.turkey-burgers .item:nth-child(odd) { margin-right:0;}
+	.turkey-burgers .item:nth-child(2n+1) {margin-left:0;}
+	
+	.fresh-chicken-tenders .item { width:100%; display:block; zoom: 1; *display: block;}
+	.fresh-chicken-tenders .item:nth-child(even) { margin-left:0;}
+	.fresh-chicken-tenders .item:nth-child(odd) { margin-right:0;}
+	
+	.gourmet-dogs .item { width:100%; display:block; zoom: 1; *display: block;}
+	.gourmet-dogs .item:nth-child(even) { margin-left:0;}
+	.gourmet-dogs .item:nth-child(odd) { margin-right:0;}
+	
+	.slider-4-packs .item { width:100%; display:block; zoom: 1; *display: block;}
+	.slider-4-packs .item:nth-child(even) { margin-left:0;}
+	.slider-4-packs .item:nth-child(odd) { margin-right:0;}
+	
+	.fries-etc .item { width:100%; display:block; zoom: 1; *display: block;}
+	.fries-etc .item:nth-child(even) { margin-left:0;}
+	.fries-etc .item:nth-child(odd) { margin-right:0;}
+	
+	.fresh-salads .item { width:100%; margin-right:0; }
+	
+	.sundaes .item { width:100%; margin-right:0;}
+	.cookies .item { width:100%; margin-right:0;}
+	
+	.kids-menu .item { width:100%; margin-right:0; }
+	
+	
+	/*****/
+	.location-header { height:auto; background-size: auto 140px; background-position: center 0px;}
+	.location-header .location-details { padding:0;}
+	.location-header .location-details h1 { margin:90px 0 0 0; font-size:36px;}
+
+	.location-events .event-item .event-item-content { width:58%;}
+	
+	.featured-items .featured-item .featured-item-content { width:58%;}
+	
+	.meet-us .meet-us-content { width:58%;}
+	
+	/***** TALKING BURGERS *****/
+	.talking-beef-burger { display:block; position:relative; width:100%; height:auto;}
+	.talking-beef-burger .beef-burger-thought { right:5%; left:auto;}
+	.talking-beef-burger .beef-burger { width:100%; max-width:291px; position:relative; padding: 0 0 85px;}
+	
+	.talking-chicken-burger { display:block; position:relative; width:100%; height:auto;}
+	.talking-chicken-burger .chicken-burger-thought { left:0; padding:0;}
+	.talking-chicken-burger .chicken-burger { width:100%; max-width:315px; position:relative; padding: 0 0 5px; top:0;}
+	
+	.talking-seafood-burger { display:block; position:relative; width:100%; height:auto;}
+	.talking-seafood-burger .seafood-burger-thought { right:5%; left:auto;}
+	.talking-seafood-burger .seafood-burger { width:100%; max-width:310px; position:relative; padding: 0 0 45px; top:45px;}
+	
+	.talking-turkey-burger { display:block; position:relative; width:100%; height:auto;}
+	.talking-turkey-burger .turkey-burger-thought { right:5%; left:auto;}
+	.talking-turkey-burger .turkey-burger { width:100%; max-width:310px; position:relative; padding: 0 0 45px; top:45px;}
+	
+	.talking-slider-4-packs  { display:block; position:relative; width:100%; height:auto; right:auto;}
+	.talking-slider-4-packs .slider-4-packs-thought { left:auto; width:90%;}
+	.talking-slider-4-packs .slider-4-packs-thought p { left:0;}
+	.talking-slider-4-packs .slider-4-pack { width:100%; max-width:310px; position:relative; padding: 0 0 35px; top:35px;}
+	
+	
+	/***** INSTAGRAM CONTEST *****/
+	.page-id-764 .content { background:#000;}
+	
+	.page-id-764 .content .contest-details { width:90%; margin:0 auto; text-align:left;}
+	.page-id-764 .content hr { border-top: 3px dotted #ed2f09; width:90%; margin:0 auto;}
+	.page-id-764 .content .binstagramed img { width:90%;}
+	.page-id-764 .content .instagram-week-1 { padding: 85px 0 25px 0; background:url(images/instagram/week1.png) no-repeat 0 15px; border-top: 3px dotted #ed2f09;}
+	.page-id-764 .content .instagram-week-2 { padding: 50px 0 25px 0; background:url(images/instagram/week2.png) no-repeat 0 15px; border-top: 3px dotted #ed2f09;}
+	.page-id-764 .content .instagram-week-3 { padding: 50px 0 25px 0; background:url(images/instagram/week3.png) no-repeat 0 15px; border-top: 3px dotted #ed2f09;}
+	.page-id-764 .content .instagram-week-4 { padding: 50px 0 25px 0; background:url(images/instagram/week4.png) no-repeat 0 15px; border-top: 3px dotted #ed2f09;}
+	
+	
+}
